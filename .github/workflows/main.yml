@@ -26,4 +26,9 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o publish
 
+    - name: Deploy to IIS
+      run: |
+         Remove-Item "C:\inetpub\wwwroot\EFCoreApp\*" -Recurse -Force
+         Copy-Item "publish\*" "C:\inetpub\wwwroot\EFCoreApp" -Recurse
+
     
