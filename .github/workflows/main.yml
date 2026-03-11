@@ -28,17 +28,19 @@ jobs:
 
     - name: Deploy to IIS
       run: |
-        # Kill IIS worker process to unlock files
-        Get-Process w3wp -ErrorAction SilentlyContinue | Stop-Process -Force
+        # Put app offline (stops IIS app)
+        New-Item "C:\inetpub\wwwroot\EFCoreApp\app_offline.htm" -ItemType File -Force
 
-        # Wait for process to close
-        Start-Sleep -Seconds 3
+        Start-Sleep -Seconds 5
 
         # Delete old files
         Remove-Item "C:\inetpub\wwwroot\EFCoreApp\*" -Recurse -Force -ErrorAction SilentlyContinue
 
         # Copy new files
         Copy-Item "publish\*" "C:\inetpub\wwwroot\EFCoreApp" -Recurse -Force
+
+        # Remove offline file (start app again)
+        Remove-Item "C:\inetpub\wwwroot\EFCoreApp\app_offline.htm" -Force -ErrorAction SilentlyContinue
 
    # - name: Deploy to IIS
     #  run: |
