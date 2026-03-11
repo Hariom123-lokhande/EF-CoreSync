@@ -28,17 +28,17 @@ jobs:
 
     - name: Deploy to IIS
       run: |
-        # Stop IIS completely
-        iisreset /stop
+        # Kill IIS worker process to unlock files
+        Get-Process w3wp -ErrorAction SilentlyContinue | Stop-Process -Force
 
-        # Remove old files
+        # Wait for process to close
+        Start-Sleep -Seconds 3
+
+        # Delete old files
         Remove-Item "C:\inetpub\wwwroot\EFCoreApp\*" -Recurse -Force -ErrorAction SilentlyContinue
 
         # Copy new files
         Copy-Item "publish\*" "C:\inetpub\wwwroot\EFCoreApp" -Recurse -Force
-
-        # Start IIS again
-        iisreset /start
 
    # - name: Deploy to IIS
     #  run: |
