@@ -1,0 +1,39 @@
+2026-03-11 18:06:17.580 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-11 18:06:17.938 +05:30 [INF] Now listening on: https://localhost:7083
+2026-03-11 18:06:17.940 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-11 18:06:18.003 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-11 18:06:18.005 +05:30 [INF] Hosting environment: Development
+2026-03-11 18:06:18.006 +05:30 [INF] Content root path: C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync
+2026-03-11 18:06:19.353 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/ - null null
+2026-03-11 18:06:19.557 +05:30 [INF] Executing endpoint 'EF_CoreSync.Controllers.HomeController.Index (EF-CoreSync)'
+2026-03-11 18:06:19.623 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller EF_CoreSync.Controllers.HomeController (EF-CoreSync).
+2026-03-11 18:06:19.642 +05:30 [INF] Executing ViewResult, running view Index.
+2026-03-11 18:06:19.752 +05:30 [INF] Executed ViewResult - view Index executed in 116.0605ms.
+2026-03-11 18:06:19.756 +05:30 [INF] Executed action EF_CoreSync.Controllers.HomeController.Index (EF-CoreSync) in 129.2111ms
+2026-03-11 18:06:19.759 +05:30 [INF] Executed endpoint 'EF_CoreSync.Controllers.HomeController.Index (EF-CoreSync)'
+2026-03-11 18:06:19.761 +05:30 [INF] HTTP GET / responded 200 in 243.6224 ms
+2026-03-11 18:06:19.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/ - 200 null text/html; charset=utf-8 433.1893ms
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/lib/jquery/dist/jquery.min.js - null null
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/_vs/browserLink - null null
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-03-11 18:06:19.782 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-11 18:06:19.824 +05:30 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync\wwwroot\css\site.css'
+2026-03-11 18:06:19.825 +05:30 [INF] HTTP GET /css/site.css responded 200 in 25.9788 ms
+2026-03-11 18:06:19.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 45.5822ms
+2026-03-11 18:06:19.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 51.1986ms
+2026-03-11 18:06:19.847 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-03-11 18:06:19.851 +05:30 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 52.4838 ms
+2026-03-11 18:06:19.854 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 72.6267ms
+2026-03-11 18:06:19.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.3068ms
+2026-03-11 18:06:19.899 +05:30 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-03-11 18:06:19.901 +05:30 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 97.5112 ms
+2026-03-11 18:06:19.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 120.5069ms
+2026-03-11 18:06:19.927 +05:30 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-03-11 18:06:19.928 +05:30 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 137.4609 ms
+2026-03-11 18:06:19.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 148.1855ms
+2026-03-11 18:06:19.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7083/favicon.ico - null null
+2026-03-11 18:06:19.963 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\HP\source\repos\EF-CoreSync\EF-CoreSync\wwwroot\favicon.ico'
+2026-03-11 18:06:19.965 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 13.3982 ms
+2026-03-11 18:06:19.968 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7083/favicon.ico - 200 5430 image/x-icon 18.5491ms
