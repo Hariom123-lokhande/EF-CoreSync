@@ -31,5 +31,7 @@ jobs:
          Remove-Item "C:\inetpub\wwwroot\EFCoreApp\*" -Recurse -Force
          Copy-Item "publish\*" "C:\inetpub\wwwroot\EFCoreApp" -Recurse
 
-    - name: Restart IIS
-      run: iisreset
+    - name: Recycle App Pool
+      run: |
+         Import-Module WebAdministration
+         Restart-WebAppPool -Name "EFCoreApp"
