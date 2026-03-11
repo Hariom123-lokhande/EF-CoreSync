@@ -2,7 +2,7 @@ name: .NET Build
 
 on:
   push:
-    branches: [ main, cicd-test]
+    branches: [ cicd-test]
 
 jobs:
   build:
