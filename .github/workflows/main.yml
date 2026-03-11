@@ -28,19 +28,17 @@ jobs:
 
     - name: Deploy to IIS
       run: |
-        Import-Module WebAdministration
-        
-        # Stop Application Pool
-        Stop-WebAppPool -Name "EFCoreApp" -ErrorAction SilentlyContinue
-        
+        # Stop IIS completely
+        iisreset /stop
+
         # Remove old files
         Remove-Item "C:\inetpub\wwwroot\EFCoreApp\*" -Recurse -Force -ErrorAction SilentlyContinue
-        
-        # Copy new published files
+
+        # Copy new files
         Copy-Item "publish\*" "C:\inetpub\wwwroot\EFCoreApp" -Recurse -Force
-        
-        # Start Application Pool
-        Start-WebAppPool -Name "EFCoreApp"
+
+        # Start IIS again
+        iisreset /start
 
    # - name: Deploy to IIS
     #  run: |
